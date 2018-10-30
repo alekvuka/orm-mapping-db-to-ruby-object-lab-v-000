@@ -103,8 +103,10 @@ class Student
       LIMIT 1
     SQL
 
+    binding.pey
+
     student = self.new_from_db(DB[:conn].execute(sql))
-    student 
+    student
   end
 
 
