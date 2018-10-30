@@ -104,6 +104,7 @@ class Student
     SQL
 
     self.new_from_db(DB[:conn].execute(sql))
+  end 
 
 
 
