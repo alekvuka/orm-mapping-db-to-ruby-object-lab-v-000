@@ -103,7 +103,9 @@ class Student
       LIMIT 1
     SQL
 
-    
+    self.new_from_db(row)
+
+
 
 
 
