@@ -104,8 +104,6 @@ class Student
       LIMIT 1
     SQL
 
-    binding.pry
-
     student = self.new_from_db(DB[:conn].execute(sql)[0])
     student
   end
