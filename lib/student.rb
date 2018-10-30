@@ -106,7 +106,7 @@ class Student
 
     binding.pry
 
-    student = self.new_from_db(DB[:conn].execute(sql))
+    student = self.new_from_db(DB[:conn].execute(sql)[0])
     student
   end
 
