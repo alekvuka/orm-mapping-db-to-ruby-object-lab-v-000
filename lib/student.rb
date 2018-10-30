@@ -97,13 +97,14 @@ class Student
   end
 
   def self.first_student_in_grade_10
+
     sql = <<-SQL
       SELECT *
       FROM students WHERE grade = 10
       LIMIT 1
     SQL
 
-    binding.pey
+    binding.pry
 
     student = self.new_from_db(DB[:conn].execute(sql))
     student
